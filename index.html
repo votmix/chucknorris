@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chucknorris</title>
+    <link href="assets/bootstrap-5.2.0-dist/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link href="public/css/index.css" rel="stylesheet" type="text/css">
+    <link href="public/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container-fluid container-lg">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+            <div class="row header">
+                <div class="col-6 col-md-6 text-start">
+                    <p class="base-font-params name-template">MSI 2020</p>
+                </div>
+                <div class="col-6 col-md-6 text-end">
+                    <p class="base-font-params menu d-lg-none">
+                        <img id="show-menu" class="show-menu" src="public/images/menu/menu_navigation_icon.png"
+                             alt="">Favourite
+                    </p>
+                </div>
+            </div>
+            <h3 class="base-font-params greeting">Hey!</h3>
+            <p class="base-font-params appeal">Let's try to find a joke for you:</p>
+            <div id="filter">
+                <div>
+                    <input type="radio" class="filter" onclick="changeFunctions(this)" id="random" name="filter"
+                           value="random">
+                    <label class="base-font-params name" for="random">Random</label>
+                </div>
+                <div>
+                    <input type="radio" class="filter" onclick="changeFunctions(this)" checked id="category"
+                           name="filter" value="category">
+                    <label class="base-font-params name" for="category">From categories</label>
+                </div>
+                <div class="id" id="category-block">
+                    <div id="category-list" class="row row-cols-auto"></div>
+                </div>
+                <div>
+                    <input type="radio" class="filter" onclick="changeFunctions(this)" id="search" name="filter"
+                           value="search">
+                    <label class="base-font-params name" for="search">Search</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="search_input" name="search" value="" placeholder="Free text search..."
+                           class="form-control d-none" aria-label="Sizing example input"
+                           aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="col-12">
+                    <input id="get-joke" class="btn" type="button" value="Get a joke">
+                </div>
+            </div>
+            <div id="joke-list"></div>
+        </div>
+        <div id="favourite" class="col d-none d-lg-block">
+            <p class="label">Favourite</p>
+            <div id="favourite-list">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/index.js" defer></script>
+<script src="assets/js/menu.js" defer></script>
+</body>
+</html>

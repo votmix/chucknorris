@@ -1,0 +1,288 @@
+@import "params";
+
+.base-font-params {
+  font-family: $base-font-family;
+  font-style: normal;
+}
+
+.header {
+  .name-template {
+    color: $base-color-text;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+  }
+
+  .menu {
+    color: #ABABAB;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 20px 0 0;
+
+    img {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+.greeting {
+  margin: 78px 0 0 20px;
+  color: $base-color-text;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.appeal {
+  margin: 5px 0 0 20px;
+  color: $base-color-text;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#filter {
+  margin: 33px 0 0 20px;
+
+  .name {
+    margin: 5px 0 5px 5px;
+    font-size: $base-text-size;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .btn {
+    background: linear-gradient(90.55deg, #8EA7FF 0%, #7291FF 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    width: 152px;
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+    cursor: pointer;
+  }
+}
+
+#category-list {
+  margin: 0 0 0 1px;
+
+  .name {
+    cursor: pointer;
+    border: 2px solid silver;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 5px 5px 0;
+  }
+
+  .choice {
+    background-color: silver;
+  }
+}
+
+#joke-list {
+  .list-block {
+    margin: 0 20px 20px 20px;
+    background-color: #DCDCDC;
+    border-radius: 20px;
+
+    .mark-image {
+      margin: 20px 20px 0 0;
+      cursor: pointer;
+    }
+
+    #id {
+      font-family: $base-font-family;
+      color: $base-color;
+      font-size: 10px;
+    }
+
+    .talk-icon {
+      border-radius: 25px;
+    }
+
+    #value {
+      font-size: $base-text-size;
+      font-family: $base-font-family;
+      font-weight: 400;
+    }
+
+    #update {
+      font-family: $base-font-family;
+      color: $base-color-text;
+      font-size: 10px;
+    }
+
+    .category {
+      font-family: $base-font-family;
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#favourite {
+  background-color: #DCDCDC;
+
+  .label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ABABAB;
+    margin: 40px 0 0 40px;
+  }
+
+  .list-block-favourite {
+    margin: 20px 40px 20px 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .mark-image {
+      margin: 20px 20px 0 0;
+      cursor: pointer;
+    }
+
+    #id {
+      font-family: $base-font-family;
+      color: $base-color;
+      font-size: 10px;
+    }
+
+    .talk-icon {
+      border-radius: 25px;
+    }
+
+    #value {
+      font-size: 14px;
+      font-family: $base-font-family;
+      font-weight: 400;
+    }
+
+    #update {
+      font-family: $base-font-family;
+      color: $base-color-text;
+      font-size: 10px;
+    }
+
+    .category {
+      font-family: $base-font-family;
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .name-template {
+      color: $base-color-text;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 40px 0 0 40px;
+    }
+
+    .menu {
+      color: #ABABAB;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 40px 40px 0 0;
+
+      img {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .greeting {
+    margin: 78px 0 0 40px;
+    color: $base-color-text;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .appeal {
+    margin: 5px 0 0 40px;
+    color: $base-color-text;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  #filter {
+    margin: 33px 0 0 40px;
+
+    .name {
+      margin: 5px 0 5px 5px;
+      font-size: $base-text-size;
+      font-weight: 400;
+    }
+
+    .btn {
+      background: linear-gradient(90.55deg, #8EA7FF 0%, #7291FF 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      width: 152px;
+      font-size: 16px;
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  #category-list {
+    margin: 0 0 0 1px;
+
+    .name {
+      border: 2px solid silver;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin: 10px 5px 5px 0;
+    }
+
+    .choice {
+      background-color: silver;
+    }
+  }
+
+  #joke-list {
+
+    .list-block {
+      margin: 0 40px 40px 40px;
+      background-color: #DCDCDC;
+      border-radius: 20px;
+
+      .mark-image {
+        margin: 20px 20px 0 0;
+      }
+
+      #id {
+        font-family: $base-font-family;
+        color: $base-color;
+        font-size: 10px;
+      }
+
+      .talk-icon {
+        border-radius: 25px;
+      }
+
+      #value {
+        font-size: $base-text-size;
+        font-family: $base-font-family;
+        font-weight: 400;
+      }
+
+      #update {
+        font-family: $base-font-family;
+        color: $base-color-text;
+        font-size: 10px;
+      }
+
+      .category {
+        font-family: $base-font-family;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
